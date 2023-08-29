@@ -1,24 +1,19 @@
-#include <iostream>
-
 class Solution {
 public:
-    vector<int> findDisappearedNumbers(vector<int>& nums) {
+    int countSeniors(vector<string>& details) {
+    
+    int count{0}; // create a variable to store the count 
 
-    int n = nums.size(); // returns the size of the vector  
-    std::vector<int> freq(n+1, 0); // initializes the array to zero, and indexes from 1 to n 
-    std::vector<int>res{}; // push back integers that are missing in the vector 
-
-    for(auto num: nums)
+    for(auto const& num : details) // iterate through the vectors 
     {
-        freq[num]++; // count the occurance ofeach element in the array
+        int data = (num[11] - '0') * 10 + (num[12] - '0'); // takes the persons name from the string and converts it to   its coresponding integer value
+            if (data > 60) 
+            {
+              count++; // if data is over 60 returns the integer of people older than 60  
+            }
     }
 
-    for(int i{1}; i <=n; ++i)
-    {
-        if (!freq[i] ) { // if the i is not in the freq push it back to a new vector 
-            res.push_back(i);
-        }
-    }
-return res;
+return count;
+
     }
 };
