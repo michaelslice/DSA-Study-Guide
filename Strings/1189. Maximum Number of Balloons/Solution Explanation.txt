@@ -1,0 +1,13 @@
+Goal: Iterate through a string and count how many times you can spell the word balloon
+
+Explanation:
+
+1. First create variables to store the count of each letter for balloon, you only need 1 variable for l and 0
+
+2. Secondly create a for loop to iterate through each element in the string text
+
+3. In the for loop create a nested if-statement, and else-if chain, and if the element is == to the letters in balloon, increment the variables
+
+4. Create a variable named min_occurance to calculate the occurance of how many time balloon can be spelled by creating a initializer list
+
+5. Finally return min_occurance variable
