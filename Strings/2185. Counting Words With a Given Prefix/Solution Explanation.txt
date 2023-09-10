@@ -1,0 +1,20 @@
+Goal: Count how many words in a vector string have the string prefix
+
+Explanation:
+
+1. First create a count variable to store the quantity of times a prefix appears in the vector string
+
+2. Secondly create a for each loop to iterate through the vector string
+
+3. In the for loop create a nested if statement with the condition where from the element in the vectors substr from index 0 to the prefixs length is equal to the prefix, increment count
+
+
+    for (const std::string& letter: words)
+    {
+        if(letter.substr(0, pref.length()) == pref)
+        {
+            ++count;
+        }
+    }
+
+4. Finally return count
