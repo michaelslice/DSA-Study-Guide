@@ -1,0 +1,24 @@
+Goal: You own a goal parser that can interpret a string command. The command consists of an alphabetof "G", "()", and "(al)". Given the string command, return the Goal Parser's interpretation of command.
+
+Explanation:
+
+1. First create a string which will store the answer of the interpreted messasge
+
+2. Secondly create a for loop to iterate through the command
+
+3. In the for loop create a nested if statement to  compare if the index [i] is equal to 'G' 
+
+4. After doing so create a else-if conditional where if the index [i] is equal to '(' and also if the index [i + 1] is equal to ')' , and also by checking the size to make sure there is no extra memory being checked for. 
+
+5. If the following condition is true add the answer + the letter to answer, and increment i
+
+            answer = answer + "o";
+            ++i;
+
+6. After add a else-if conditional to check if the index [i] is equal to '(' and if the index [i + 1] is equal to 'a', and lastly checking if i + 3 is less than the size of the command
+
+7. If the condition is true add answer and 'al' together
+
+ answer = answer + "al";
+            i = i + 3;
+8. Finally return answer 
