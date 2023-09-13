@@ -1,0 +1,22 @@
+Goal: Return the first letter that appears twice in a string 
+
+Explanation:
+
+1. First create a integer variable to store the minimum value
+
+2. Create a for loop to iterate through the size of the string, use i as increment variable
+
+3. Next create a nested for loop to iterate through the size of the string, use j as the increment variable
+
+4. In the for loop create a nested if statement that comapares the index [i] to index [j] 
+
+5. Next use the mini variable to check the min value amongst mini and the index [j], which is the index of the duplicate value
+
+if(s[i] == s[j])
+{
+  mini=min(mini, j);
+}
+
+6. Finally return the string s, with the index of mini
+
+return s[mini];
