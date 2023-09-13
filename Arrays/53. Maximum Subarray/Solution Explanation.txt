@@ -1,0 +1,19 @@
+Goal: Given a integer array nums, find the subarray with the largest sum, and return its sum
+
+Explanation:
+
+1. First a integer variable named max_sum, and also create a second integer variable named current_sum
+
+2. Secondly create a for loop to iterate through the array of nums
+
+3. In the for loop assign current_sum to a max function that finds the maximum value amongst the index of nums and and the current sum + the elements in the index of nums
+
+ current_sum = max(nums[i], current_sum + nums[i]); 
+
+4. After assign the max_sum variable to a max function, that calculates the maximum value amongst max_sum, and current sum
+
+
+ max_sum = max(max_sum, current_sum);
+
+
+5. Finally return the max_sum variable
