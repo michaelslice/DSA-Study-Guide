@@ -1,0 +1,17 @@
+Recursion is a programming technique where a function calls iteself within 
+its own definition. It is usually used to solve problems that can be broken
+down into smaller instances of the same problem. For example Towers of Hanoi
+Factorial Calculation, Fibonacci Sequence.
+
+Steps:
+
+Base Case: Define a condition that stops the recursive calls and provides
+a solution.
+Recursive Case: Define the steps to break down the problem into smaller instances 
+and make recursive calls
+Return: Return the solution from the recursive calls and combine them 
+to solve the original problem
+
+Recursion forms the base for many other algorithms, Tree Traversals,
+Graph traversal, Divide and Conquer Algortihms, Backtracking Algorithms,
+

@@ -1,0 +1,13 @@
+Searching algorithms are used to locate specific data within a larger
+set of data. It helps find the presence of a target value within the data.
+There are various types of searching algorithms, each with its own approach and 
+efficiency.
+
+Most Common Searching Algortihms:
+
+Linear Search: Iterative search from one end to the other
+Binary Search: Divide-and-conquer search on a sorted array,
+halving the search space at each iteration.
+Ternary Search: Divide-and-conquer search on a sorted array, divide the search
+space into three parts at each iteration.
+ 

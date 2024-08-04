@@ -1,0 +1,18 @@
+Sorting Algorithm:
+
+Sorting algorithms are used to arrange the elements of a list in a specific order
+such as numerical or alphabetical. It organizes the items in a systematic way, making it easier to search for and access specific elements.
+
+Most Used Sorting Algorithms:
+
+Bubble Sort: Iteratively compares adjacent elemets and swaps them if 
+they are out of order. The largest element "bubbles" to the end of the list with each pass.
+
+Selection Sort: Finds the minimum element in the unsorted portion of the list and swaps it with the first element. Repeats this process until the entire list is sorted.
+
+Insertion Sort: Builds the sorted list one element at a time by inserting each unsorted element into its correct position in the sorted portion.
+
+Quick Sort: A divide-and-conquer algorithm that selects a pivot element, partitions the list into two sublists based on the pivot,
+and recursively applies the same process to the sublists.
+
+Merge Sort: Another divide-and-conquer algorithm that recursively divides the list into smaller sublists, sorts them, and then merges them back together to obtain the sorted list.

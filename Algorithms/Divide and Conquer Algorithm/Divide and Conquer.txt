@@ -1,0 +1,19 @@
+Divide and Conquer Algortihms follow a recursive strategy to solve
+problems by dividing them into smaller subproblems, solving those 
+subproblems, and combining the solutions to obtain the final solution.
+
+Steps:
+
+1. Divide: Partition the problem into smaller, independent subproblems
+2. Conquer: Recursively solve each subproblem
+3. Combine: Merge the solutions of the subproblems to obtain the final solution
+
+Examples:
+
+Merge Sort: Divides the array into two halves, sorts each half recursively
+and merges the sorted halves
+Quick Sort: Selects a pivot element, partitions the array into two subarrays 
+based on the pivot, and recursively sorts each subarray
+Binary Search: Divides the search space in half repeatedly until the
+target element is found or the search space is exhausted
+

@@ -1,0 +1,15 @@
+As the name sugests, this algorithm builds up the solution one piece 
+at a time and chooses the next piece which gives the most obvious and immediate benefit
+which is the most optimal choice at that moment. So the problems 
+where choosing locally optimal also leads to the global solutions are
+best fit for greedy.
+
+Most Important Greedy Algortihms
+
+Fractional Knapsack: Find the maximum total value of items
+that can be placed in the knapsack, allowing fractional inclusion of items
+Dijkstra's Algortihm: Find the shortest path from a source vertex to all 
+other vertices in a weighed graph.
+Kruskal's Algorithm: Finds the minimum spanning tree of a weighed graph
+Huffman Coding: Creates an optimal prefix code for a set of symbols 
+minimizing the total encoding length
