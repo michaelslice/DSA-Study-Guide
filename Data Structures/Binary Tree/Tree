@@ -1,0 +1,27 @@
+A tree is a non-linear hierarchical data structure consisting of nodes 
+connected by edges, with a top node called the root and nodes having 
+child nodes. It is used in computer science for organizing data efficiently.
+
+Traversal of Tree: Tree traversal methods are used to visit and 
+process nodes in a tree data structure. 
+
+Traversal Methods:
+
+In-Order: Visist left subtree, current node, then right subtree
+Pre-Order: Visit current node, left subtree, then right subtree
+Post-Order: Visit left subtree, right subtree, then current node
+
+Classification of Trees:
+
+By Degree: Trees can be classified  based on the maximum number of childern each node can have
+Binary Tree: Each node has at most two children
+Ternary Tree: Each node has at most three children
+N-ary Tree: Each node has at most N children
+
+By-Ordering: Trees can be classified based on the ordering of nodes and subtrees
+Binary Search Tree(BST): Left child < parent < right child for every node
+Heap: Binary tree with the heap property
+
+By-Balance: Trees can be classified based on how well-balanced they are
+Balanced Tree: Heights of subtrees differ by at most one, Examples include AVL trees and Red-Black Trees
+Unbalanced Tree: Heights of subtrees can differ significantly affecting performance in operations like search and insertion

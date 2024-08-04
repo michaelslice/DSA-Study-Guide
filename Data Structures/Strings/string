@@ -1,0 +1,19 @@
+A string is a sequence of characters typically used to represent text.
+It is considered a datat type that allows for the manipulation and processing of 
+textual data.
+
+Operations on String:
+
+Concatenation: Joining two strings together
+Comparison: Comparing two strings lexicographically
+Substring extraction: Extracting a substring from one string
+Search: Searching for a substring withing a string
+Modification: Changing or replacing characters within a string
+
+Applications of String:
+
+Text processing
+Pattern matching
+Data validation
+Database management
+

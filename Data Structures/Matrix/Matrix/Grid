@@ -1,0 +1,11 @@
+A matrix is a two-dimensional array of elements arranged in rows and columns 
+It is represented as a rectangular grid, with each element at the intersection 
+a row and a columns
+
+Key Concepts:
+
+Rows: Horizontal lines of elements in a matrix
+Columns: Vertical lines of elements in a matrix
+Dimensions: The number of rows and columns in a matrix (3x4, 3 rows 4 columns)
+Element Access: Elements can be accessed using row and column indices (M[2][2], refers to the element in row 2, column 2)
+
