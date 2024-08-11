@@ -2,7 +2,8 @@
 #include <vector>
 
 /**
- *  Vector: A vector is a dynamic array that can grow in size. It provides random access to elements.
+ *  Iterator: Is a object that allows you to traverse or iterate through the elements of a 
+ *  container in a sequential manner. 
  * 
  *  begin(): Returns an iterator pointing to the first element of the vector.
  *  end(): Returns an iterator pointing to the element past the last element of the vector.

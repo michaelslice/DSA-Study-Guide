@@ -1,8 +1,8 @@
 #include <iostream>
 #include <array>
 
-// Array: Static array with fixed size, introduced in C++11.
-
+/** Array: Static array with fixed size
+ */
 int main() {
     std::array<int, 4> array = {1, 2, 3, 4};  // Initialize a static array with 4 elements: 1, 2, 3, 4
 

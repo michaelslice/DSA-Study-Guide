@@ -1,6 +1,10 @@
 #include <iostream>
 #include <list>
 
+/**
+ *  std::list: Doubly linked list, which allows fast insertions and deletions anywhere in the list but no random access
+ * 
+ */
 int main() {
     std::list<int> list = {1, 2, 3, 4};
 
