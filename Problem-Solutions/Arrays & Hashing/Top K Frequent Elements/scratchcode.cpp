@@ -57,3 +57,23 @@ int main() {
 
     return 0;
 };
+
+/**
+Key-Value Pair in Map
+Key -1 Value 2
+Key 1 Value 1
+Key 2 Value 2
+Key 3 Value 1
+Key 4 Value 1
+
+Elements in Vector
+-1 2
+2 2
+1 1
+3 1
+4 1
+
+Top K Elements
+-1
+2
+ */

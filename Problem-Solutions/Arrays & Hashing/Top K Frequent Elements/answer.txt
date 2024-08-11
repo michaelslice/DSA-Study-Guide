@@ -1,0 +1,9 @@
+1. Iterate through nums, and update the hash map with values and their count
+
+2. Create a vector<pair<int, int>> pair_vec, to store the number and its count
+
+3. Sort the vector<pair<int, int>> pair_vec by elements with the highest count
+
+4. Iterate through the pair_vec until k, and push_back the num.first to the vector
+
+5. Return vector ans

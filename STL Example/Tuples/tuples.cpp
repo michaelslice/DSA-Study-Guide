@@ -2,35 +2,32 @@
 #include <utility>  // For std::pair
 #include <tuple>    // For std::tuple
 
+// Tuple: Is a fixed size collection of heterogenuos values, 
+
+using namespace std;
 int main() {
-    // Example with std::pair
-    std::pair<int, std::string> person;  // Define a pair with an int and a string
-    person = std::make_pair(1, "Alice"); // Initialize the pair with values
 
-    std::cout << "Person ID: " << person.first << std::endl;
-    std::cout << "Person Name: " << person.second << std::endl;
+    // Creating a tuple
+    std::tuple<int, int> my_tuple(12, 10);
 
-    // Example with std::tuple
-    std::tuple<int, std::string, double> student;  // Define a tuple with an int, a string, and a double
-    student = std::make_tuple(1, "Bob", 3.75);    // Initialize the tuple with values
+    int a = 12;
+    int b = 10;
 
-    // Accessing tuple elements using std::get
-    std::cout << "Student ID: " << std::get<0>(student) << std::endl;
-    std::cout << "Student Name: " << std::get<1>(student) << std::endl;
-    std::cout << "Student GPA: " << std::get<2>(student) << std::endl;
+    // Make a pair of two objects
+    std::make_pair(a, b);
 
-    // Using structured bindings (C++17 and later)
-    auto [id, name, gpa] = student;
-    std::cout << "Student ID (structured binding): " << id << std::endl;
-    std::cout << "Student Name (structured binding): " << name << std::endl;
-    std::cout << "Student GPA (structured binding): " << gpa << std::endl;
+    // Accessing Elements
+    int num1 = std::get<0>(my_tuple);
+    int num2 = std::get<1>(my_tuple);
 
-    // Creating a tuple with different types of elements
-    auto mixedTuple = std::make_tuple(42, "Hello", 3.14, 'A');
-    std::cout << "Mixed Tuple: " << std::get<0>(mixedTuple) << ", "
-              << std::get<1>(mixedTuple) << ", "
-              << std::get<2>(mixedTuple) << ", "
-              << std::get<3>(mixedTuple) << std::endl;
+    std::cout << num1 << '\n';
+    std::cout << num2 << '\n';
+    
+    // Tuple of Strings
+    std::tuple<string, string> names("name", "test");
+
+    // Concatenating a string
+    auto combined = tuple_cat(my_tuple, names);
 
     return 0;
 }

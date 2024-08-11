@@ -1,8 +1,10 @@
 #include <iostream>
 #include <unordered_map>
 
-// Unordered Map: Stores key-value pairs with fast access but no specific order.
-// There is no sorted order for keys
+/* Unordered Map: Stores key-value pairs with fast access but no specific order.
+*  The key value pairs are not in any specefic order, where as a regular map sorts keys in asending order
+*
+*/ 
 int main() {
     std::unordered_map<char, int> unordered_map1;  // Create an unordered map with char keys and int values
 
