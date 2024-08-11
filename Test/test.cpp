@@ -1,18 +1,32 @@
 #include <iostream>
-#include <vector>
+#include <algorithm>
 #include <unordered_map>
+#include <vector>
 #include <map>
 
+using namespace std;
 int main() {
     
-    std::unordered_map<int, int> map;
+    std::vector<int> vec = {1, 2, 3, 4, 5, 6 ,1, 10};
+    
+    map<int, int> map;
 
-    map.insert({1, 12});
-    map.insert({1, 22});
-    map.insert({2, 32});
-
-    for(auto num : map) {
-        std::cout << num.first << " "<< num.second << '\n';
+    for(int i{0}; i < vec.size(); ++i) {
+        map.insert({i, vec[i]});
     }
+
+    
+    for(auto num: map) {
+        std::cout << "Key: " << num.first << " Value: " << num.second << '\n';
+    }
+    cout << '\n';
+    vector<int> vec1;
+    for(auto num: map) {
+        vec1.push_back(num.second);
+    }
+
+    int total = count(vec1.begin(), vec1.end(), 1);
+    cout << "Total " << total << '\n'; 
+
     return 0;
 }

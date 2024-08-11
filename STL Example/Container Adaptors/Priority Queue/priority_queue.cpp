@@ -1,6 +1,11 @@
 #include <iostream>
 #include <queue>
 
+/**
+ *  Priority Queue: Is a queue but the highest values will appear first in the queue
+ *  lower values have lower priority
+ * 
+ */
 int main() {
     std::priority_queue<int> pq;  // Create a priority queue of integers
 
@@ -10,7 +15,7 @@ int main() {
 
     while (!pq.empty()) {
         std::cout << pq.top() << " ";  // Output: 10 5 1 (elements in decreasing order of priority)
-        pq.pop();  // Remove the element with the highest priority
+        pq.pop();                      // Remove the element with the highest priority
     }
 
     return 0;

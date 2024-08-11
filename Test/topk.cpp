@@ -9,13 +9,12 @@
 using namespace std;
 int main() {
     
-    priority_queue<int> pq;
     map<int, int> my_map;
     vector<int> nums = {4,1,-1,2,-1,2,3};
 
     for(auto num: nums) {
         int count = std::count(nums.begin(), nums.end(), num);
-        my_map.insert({num, count}); // Keep updating the number with its count
+        my_map.insert({num, count}); 
     }
 
     cout << "Key-Value Pair in Map" << '\n';
@@ -26,23 +25,36 @@ int main() {
     int k = 2;
     int j = 0;
     vector<int> ans;
-    
-    
-    cout << "Elements in Priority Queue" << '\n';
+    vector<pair<int, int>> pair_vec;
+
     for(auto num: my_map) {        
-        pq.push(num.first);
-        
-        if(j < k) {
-            ans.push_back(pq.top());
-            j++;
-        }
-        cout << pq.top() << '\n';        
+        auto element = make_pair(num.first, num.second);
+        pair_vec.push_back(element);
     }
 
+    sort(pair_vec.begin(), pair_vec.end(), [](auto &left, auto&right) {
+        return left.second > right.second;
+    });
+
     cout << "Elements in Vector" << '\n';
+    for(auto num: pair_vec) {
+        cout << num.first << " " << num.second << '\n';
+    }
+
+    for(auto num: pair_vec) {
+        if (j < k) {
+            ans.push_back(num.first);
+            j++;
+        } else {
+            break;
+        }
+    }
+
+    cout << "Final Answer" << '\n';
     for(auto num: ans) {
         cout << num << '\n';
     }
 
+
     return 0;
-}
+};

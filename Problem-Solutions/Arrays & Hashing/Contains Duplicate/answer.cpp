@@ -1,3 +1,13 @@
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+#include <vector>
+#include <map>
+#include <queue>
+#include <string>
+
+using namespace std;
+
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
@@ -10,7 +20,5 @@ public:
         }
     }
     return false;
-
-
     }
 };

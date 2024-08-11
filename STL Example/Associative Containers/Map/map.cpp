@@ -6,6 +6,8 @@
  * 
  * Order: Elements are sorted in order based on the key
  * 
+ * There are no duplicate keys, keys and their values will be updated with new values
+ * 
  */
 int main() {
     std::map<char, int> map;  // Create a map with char keys and int values
