@@ -1,0 +1,19 @@
+1. Create a unordered map with key(string), and value(vector<string>)
+
+2. Create a vector of vectors vector<vector<string>> vec
+
+3. Iterate through the vector of strings
+
+4. Create duplicate of the current string
+
+5. Sort that string, and look through the map to see if it exists as a key
+
+6. If it exists push_back the str to the current key
+    map[search->first].push_back(str);
+
+7. If it does not exist add it to the map
+    map[sorted_word].push_back(str); 
+
+8. Iterate through the map and push back the vector of valid anagrams
+
+9. Return the vec

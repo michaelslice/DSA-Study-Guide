@@ -1,0 +1,12 @@
+1. Create a hashmap, key(complement), value(index)
+
+2. Iterate through the vector, and find the complement = target - nums[i]
+
+3. Find the complement in the map, until reaching the end of the map, and return 
+
+4. return {map[complement], i}
+    map[complement]: The index of the complement stored in the map
+    i: The index of the other current element
+
+5. If the complement is not found update the map with the current element as the key, and the index as its value
+    map[nums[i]] = i;
