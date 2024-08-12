@@ -1,6 +1,9 @@
 #include <iostream>
 #include <queue>
 
+/**
+ *  Queue: Is first in first out data structure
+ */
 int main() {
     std::queue<int> q;
     q.push(1);  // Adds 1 to the queue

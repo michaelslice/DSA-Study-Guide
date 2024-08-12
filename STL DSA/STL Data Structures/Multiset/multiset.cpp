@@ -1,8 +1,9 @@
 #include <iostream>
 #include <set>
 
-// Multiset: Stores sorted elements, allows duplicates.
-
+/**
+ * Multiset: Stores sorted elements, allows duplicates.
+*/
 int main() {
     std::multiset<int> ms = {3, 1, 4, 1, 5};  // Initialize a multiset with elements 3, 1, 4, 1, 5 (note: 1 is duplicated)
     ms.insert(1);  // Adds another 1 to the multiset

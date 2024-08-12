@@ -1,7 +1,8 @@
 #include <iostream>
 #include <deque>
 
-/* Deque: Double-ended queue, allows fast insertion and deletion at both ends.
+/**
+ *  Deque: Double-ended queue, allows fast insertion and deletion at both ends.
 */
 int main() {
     std::deque<int> deque = {1, 2, 3, 4};  // Initialize a deque with elements 1, 2, 3, 4

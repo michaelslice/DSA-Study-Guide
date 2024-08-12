@@ -1,8 +1,9 @@
 #include <iostream>
 #include <map>
 
-// Multimap: Stores sorted key-value pairs, allows duplicate keys.
-
+/** 
+ * Multimap: Stores sorted key-value pairs, allows duplicate keys.
+ */
 int main() {
     std::multimap<char, int> mm;  // Create a multimap with char keys and int values
     mm.insert({'a', 1});  // Add key-value pair ('a', 1) to the multimap

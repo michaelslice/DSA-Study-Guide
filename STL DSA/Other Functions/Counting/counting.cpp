@@ -15,12 +15,3 @@ int main() {
     
     return 0;
 }
-
-int sort(vector<int> vec) {
-    // Sort the number in ascending order
-    std::sort(vec.begin(), vec.end());
-    // Unique: Will remove consecutive duplicates you must sort before using
-    std::unique(vec.begin(), vec.end());
-    
-    return 0;
-}

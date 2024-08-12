@@ -1,0 +1,26 @@
+BigO: Represents an algorithm's worst case complexity. BigO defines the 
+runtime required to execute an algorithm by identifying how the performance
+of a algorithm will change as the input size grows
+
+Time Complexity: Is how long it will take to execute an algorithm
+as a function of its input size. 
+
+Space Complexity: Is the total amount of space or memory required to 
+execute an algorithm as a function of the size of the input
+
+Time and Space Complexity
+
+Constant: O(1)
+Linear Time: O(n)
+Logarithmic Time: O(n log n)
+Quadratic Time: O(n^2)
+Exponential Time: O(2^n)
+Factorial Time: O(n!)
+
+Ranking
+
+O(1): Excellent
+O(Log n): Good
+O(n): Fair
+O(n log n): Bad
+O(n^2), O(2^n), and O(n!): Terrible

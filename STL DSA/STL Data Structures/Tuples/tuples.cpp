@@ -1,9 +1,10 @@
 #include <iostream>
-#include <utility>  // For std::pair
-#include <tuple>    // For std::tuple
+#include <utility> 
+#include <tuple>   
 
-// Tuple: Is a fixed size collection of heterogenuos values, 
-
+/**
+ *  Tuple: Is a fixed size collection of heterogenuos values, 
+ */
 using namespace std;
 int main() {
 

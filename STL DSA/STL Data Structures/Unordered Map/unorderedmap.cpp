@@ -1,7 +1,8 @@
 #include <iostream>
 #include <unordered_map>
 
-/* Unordered Map: Stores key-value pairs with fast access but no specific order.
+/**
+*  Unordered Map: Stores key-value pairs with fast access but no specific order. 
 *  The key value pairs are not in any specefic order, where as a regular map sorts keys in asending order
 *
 */ 
