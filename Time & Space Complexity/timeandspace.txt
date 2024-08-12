@@ -24,3 +24,10 @@ O(Log n): Good
 O(n): Fair
 O(n log n): Bad
 O(n^2), O(2^n), and O(n!): Terrible
+
+Time and Space Complexity of Operations
+
+Loops: Usually O(n), where n is the number of iterations, nested loops multiply the complexity
+Conditional: Dont affect run time, unless they contain loops or recursive calls
+Function Calls: The complexity of different built in functions differs
+Recursion: Recurrence relations can be used to determine complexity

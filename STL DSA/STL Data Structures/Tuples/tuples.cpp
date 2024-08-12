@@ -4,6 +4,13 @@
 
 /**
  *  Tuple: Is a fixed size collection of heterogenuos values, 
+ * 
+ *  Time Complexity of Operations
+ * 
+ *  O(n): tuple_cat
+ * 
+ *  O(1): get, make_pair
+ * 
  */
 using namespace std;
 int main() {
