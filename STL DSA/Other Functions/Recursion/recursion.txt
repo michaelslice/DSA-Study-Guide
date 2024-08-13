@@ -1,0 +1,34 @@
+Types of Problems Recursion Applies To: 
+
+Overlapping subproblems: 
+
+The problem can be broken down into smaller, similiar subproblems
+
+These subproblems can be solved independently and their solutions can be combined to solve the larger problem
+
+Common in problems involving trees, graphs, or sequences
+
+
+Recursion: Is a concept where a function calls itself in order to solve smaller instances 
+of the same problem. It's like a loop but instead of iterating through a sequence the function 
+repeatedly calls itself with slightly modified input until it reaches a base case.
+
+Key Concept of Recursion:
+
+Base Case: This is the condition that stops the recursion
+
+Recursive Case: This is where the function calls itself with a modified arguement, working towards 
+the base case.
+
+Call Stack: Each time a function calls itself, a new frame is added to the call stack. When a base case
+is reached, the function returns a value, and the call stack begins to unwind returning values
+throughout the previous calls.
+
+Advantages of Recursion: 
+
+Simplifies Code: Complex problems can be broken down into simpler subproblems, making the code easier
+to write and understand.
+
+Elegant Solutions: Recursion often leads to elegant and compact solutions for problems like tree 
+traversal, backtracking, divide-and-conquer algorithms.
+
