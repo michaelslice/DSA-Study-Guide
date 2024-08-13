@@ -9,6 +9,8 @@
  * O(n):
  * 
  * O(1):
+ * 
+ * Memory Complexity of Operations
  *  
  */
 int main() {
@@ -20,6 +22,9 @@ int main() {
     for(int i: vec) {
         std::cout << i;  // Output: 12345678910
     }
+
+    // at: Provides access to an element at a specific position in the vector, with bounds checking
+    vec.at(1); // index: 1
 
     // size: Returns the number of elements in the vector.
     vec.size();
