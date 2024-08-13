@@ -1,0 +1,15 @@
+1. Create a vector named ans to store the answers
+
+2. Iterate through nums, and insert those elements into ans
+
+3. Initialize a variable prefix to 1, and then 
+iterate through nums from LEFT to RIGHT, updating ans[i] with the current prefix
+
+4. Update the prefix value by multiplying it by the current element in nums[i]
+
+5. Initialize a variable postfix to 1, and then create a second for loop iterating 
+backwards through nums from RIGHT to LEFT,
+
+6. Update the current index in ans by multiplying it by postfix
+
+7. Update postfix by multiplying it by the current element in nums

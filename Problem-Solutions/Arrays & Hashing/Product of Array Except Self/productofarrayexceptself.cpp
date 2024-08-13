@@ -8,29 +8,33 @@
 #include <list>
 using namespace std;
 
-class Solution {
-public:
-    vector<int> productExceptSelf(vector<int>& nums) {
-    /* 
-    1. Traverse through array
+int main() {
 
-    2. Right Product 
-    */
+    vector<int> nums = {1, 2, 3 ,4};
+    vector<int> ans;
 
-    vector<int> left;
-    vector<int> right;
-
-    for(int i{0}; i < nums.size(); ++i) {
-        left.push_back(nums[i]);
-
+    for(auto num: nums) {
+        ans.push_back(num);
     }
 
-    cout << "Elements in left" << '\n';
-    for(auto num: left) {
+    int prefix{1};
+    for(int i{0}; i < nums.size(); ++i) {
+        ans[i] = prefix;
+        prefix *= nums[i];
+    }
+
+    int postfix{1};
+    int size = nums.size() - 1; 
+    for(int j{size}; j >= 0; --j) {
+        ans[j] *= postfix;
+        postfix *= nums[j];
+    }
+
+    cout << "Elements in Answer" << '\n';
+    for(auto num: ans) {
         cout << num << '\n';
     }
 
-
-    }
-};
+    return 0;
+}
 
