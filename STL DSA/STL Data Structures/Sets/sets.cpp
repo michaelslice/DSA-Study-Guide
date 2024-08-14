@@ -4,13 +4,18 @@
 /**
  * Set: Stores unique elements in sorted order, and is implemented as red-black tree
  * 
- *  Time Complexity of Operations
+ * Key Characteristics
  * 
- *  O(n): Clear
+ * Elements are sorted
+ * All elements are unique
  * 
- *  O(1): Begin, end, size, empty
+ * Time Complexity of Operations
  * 
- *  O(log n): Insert, find, count, erase
+ * O(n): Clear
+ * 
+ * O(1): Begin, end, size, empty
+ * 
+ * O(log n): Insert, find, count, erase
  * 
  */
 int main() {

@@ -1,0 +1,52 @@
+What ALGO SHOULD YOU USE???
+
+Array: Random access, fixed size, contiguos memory storage
+Common Problem Types:
+    Sliding Window 
+    Two-Pointer
+    Dynamic Programming with Fixed States
+
+Dynamic Array: Need for a resizable array with frequent insertions/deletions
+Common Problem Types:
+    Dynamic Resizing of Lists:
+    Storing Immediate Results in Dynamic Programming
+
+Linked Lists: Frequent insertions/deletions at the beginning or end
+Common Problem Types:
+    Implementing LRU caches
+    Problems requiring pointer manipulations(reversing a a list)
+
+Stack: LIFO(Last-In-First-Out) structure undo operations
+Common Problem Types:
+    Validating parentheses/brackets
+    Depth-first search (DFS)
+    Backtracking problems
+
+Queue & Deque: FIFO(First-In-First-Out) structure, double-ended-operations
+Common Problem Types:
+    Breadth-first search(BFS)
+    Sliding window maximum/minimum 
+
+Hash Maps & Hash Sets: Constant time average lookups, insertions, and deletions
+STL Structure:
+    unordered_map<key, value>: Hash map for key-value pairs
+    unordered_set<value>: Hash set for unique elements
+Common Problem Types:
+    Counting Frequencies
+    Finding duplicates
+    Problems involving quick lookups
+
+Ordered Maps & Sets: Sorted order, log-time complexity for operations
+STL Structure:
+    map<key, value>: Red-black tree based ordered map
+    set<value>: Red-black tree based ordered set
+Common Problem Types:
+    Keeping elements in sorted order
+    Range queries(find the smallest elements greater than x)
+    Problems involving order statistics
+
+Heaps (Priority Queue): Extracting the maximum/minimum element efficiently
+Common Problem Types:
+    Dijkstra's algorithm (shortest path)
+    Top k elements
+    Merging K sorted lists

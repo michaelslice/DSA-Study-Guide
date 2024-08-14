@@ -5,6 +5,11 @@
  *  Unordered Map: Stores key-value pairs with fast access but no specific order. 
  *  The key value pairs are not in any specific order, where as a regular map sorts keys in asending order
  *
+ *  Key Characteristics
+ * 
+ *  Elements are not sorted
+ *  Keys must be unique
+ * 
  *  Elements are not sorted in any particular order, but organized into buckets. The bucket that the element is
  *  placed into depends entirely on the hash of its key. Keys with same hash code appear in the same bucket.
  *  Allowing for fast access to individual elements, since once the hash is computed, it refers to the exact bucket 

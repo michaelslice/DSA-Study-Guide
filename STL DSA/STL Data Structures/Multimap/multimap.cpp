@@ -5,6 +5,11 @@
  * Multimap: Stores key-value pairs in sorted order by keys, and is implemented as a balanced binary search tree
  * duplicate keys are allowed in a multi map
  * 
+ * Key Characteristics
+ * 
+ * Elements are sorted by key
+ * Keys are not unique(multiple elements can have the same key)
+ * 
  * Time Complexity of Operations
  * 
  * O(1): Initialization, size, end ,empty

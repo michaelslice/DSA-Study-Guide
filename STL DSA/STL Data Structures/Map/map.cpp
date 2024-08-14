@@ -7,6 +7,11 @@
  * Order: The map is sorted by the value values in ascending order first ex: 1, 10, 20, 21, 40, 100, 1400, 2000
  * There are no duplicate keys, keys and their values will be updated with new values
  * 
+ * Key Characteristics:
+ * 
+ * Elements are sorted by key
+ * Keys must be unique 
+ * 
  * Time Complexity of Operations
  * 
  * O(1): Initialization, size, end

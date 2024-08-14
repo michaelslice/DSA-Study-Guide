@@ -4,6 +4,11 @@
 /**
  * Multiset: Stores sorted elements, allows duplicates, sorted by key
  * 
+ * Key Characteristics
+ * 
+ * Elements are sorted
+ * Elements can have duplicates(multiple elements can have the same value)
+ * 
  * Time Complexity of Operations
  * 
  * O(n): Clear

@@ -7,6 +7,11 @@
  * Unordered Set: Stores unique elements with no specific order, it is implemented as a hash table, where each
  * element's key is hashed to determine its position within the container. 
  * 
+ * Key Characteristics
+ * 
+ * Elements are not sorted
+ * All elements are unique
+ * 
  * Time Complexity of Operations
  * 
  * O(n): clear, rehash, reserve, equal_range
