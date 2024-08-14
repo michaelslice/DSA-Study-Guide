@@ -19,6 +19,9 @@
 int main() {
     std::map<char, int> map;  // Create a map with char keys and int values
 
+    // map[key]++: Will update the value associated with the key, or insert it if the key does not exist
+    map['a']++;
+
     // operator[]: Provides access to the value associated with a specified key. Inserts a default value if the key does not exist.
     map['a'] = 1; 
     map['b'] = 2;  
