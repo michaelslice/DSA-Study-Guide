@@ -1,0 +1,12 @@
+1. Create a unordered_set to verify rows, columns, and create a map<int, int>, unordered_set<char>> 
+to verify the 3x3 grids
+
+2. Iterate through nums row by row, and insert the nums into the unordered_set, if count is higher than
+return false, afer every iteration clear the set
+
+3. Iterate through the columns and insert each num into the unordered_set, if the count is higher than
+2 return false
+
+4. Finally check the 3x3 grid. The trick is to divide the row(i) and column(j) by 3, and then insert
+the pair (row, column) as the key into a map, and then store the value board[i][j] as the value 
+if for the key (row, column) a element all ready exists return false

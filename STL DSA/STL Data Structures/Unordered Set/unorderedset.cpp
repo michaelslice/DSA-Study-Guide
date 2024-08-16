@@ -36,6 +36,10 @@ int main() {
     set1.erase(2);  // Removes 2 from the set
 
     // find: Searches for an element in the unordered set and returns an iterator to it. If not found, returns end().
+    if(set1.find(20) !=set1.end()) {
+        std::cout << "20 is in the set" << '\n';
+    } 
+
     auto it = set1.find(4);
     if (it != set1.end()) {
         std::cout << "Found element 4 in the set\n";

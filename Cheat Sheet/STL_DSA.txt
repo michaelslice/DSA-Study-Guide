@@ -1,0 +1,40 @@
+BELOW ARE DATA STUCTURES THAT ARE SORTED ASCENDING BY KEY
+
+std::multiset: Stores duplicate keys
+
+std::multimap: Stores duplicate keys
+
+std::set: Stores unique keys
+
+std::map: Stores unique keys
+
+std::priority_queue: A special type of queue that always removes the largest (or smallest) element.
+
+
+
+
+BELOW ARE DATA STRUCTURES THAT ARE NOT SORTED
+
+std::unordered_set: Stores unique keys, in no order
+
+std::unordered_map: Stores unique keys with associated values without any specific order
+
+std::unordered_multiset: Stores duplicate keys without any specific order.
+
+std::unordered_multimap: Stores duplicate keys with associated values without any specific order
+
+std::vector: Dynamic array that can change size
+
+std::deque: Double-ended queue that allows insertion/removal from both ends
+
+std::list: Doubly linked list that allows bidirectional iteration
+
+std::forward_list: Singly linked list that allows unidirectional iteration
+
+std::stack: ast-In-First-Out (LIFO) stack
+
+std::queue: First-In-First-Out (FIFO) queue
+
+std::pair: Can hold exactly two elements
+
+std::tuple: Can hold any number of elements
