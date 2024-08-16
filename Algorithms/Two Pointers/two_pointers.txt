@@ -1,0 +1,27 @@
+Two Pointers: Is a technique that uses two pointers to solve problems by scanning from both ends of a data strucutre 
+toward the center 
+
+How it Works:
+
+1. Initialization: Start by placing two pointers at different positions in the data structure
+One pointer starts at the beginning (left), and the other at the end(right). In
+some problems, both pointers might start from the beginning or in the middle and move outward
+
+2. Movement: The pointers move towards each other or in a specific direction based on the 
+conditions specified in the problem. The movement could involve:
+    Moving one pointer conditionally based on some criteria 
+    Moving both pointers simultaneously 
+    Adjusting one pointer to maintain a particular condition(like maintaining a window of certain properties)
+
+3. Condition Checking: As the pointers move the algorithm checks certain conditions.
+When these conditions are met, a solution is derived.
+
+Common Problems:
+
+1. Finding a pair in a sorted array that sums to a target
+2. Reversing a string or array
+3. Removing duplicates from a sorted array
+4. Checking for a palindrome
+5. Sliding Window Problems
+    The two pointers represent the windows start and end, and they slide across the array
+    to maintain a certain condition(like a sum or a product)

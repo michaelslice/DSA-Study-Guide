@@ -1,0 +1,13 @@
+Sliding Window: Is a technique in which a fixed or variable-size window is a moved through a 
+data structure, typically an array or string, to solve problems efficiently based on continuous subsets
+of elements. 
+
+Types of Sliding Window:
+
+1. Fixed Size Sliding Window:
+    The window has a fixed size, and it moves from the start to the end 
+    of the array or string.
+
+2. Variable Size Sliding Window:
+    The window size can grow or shrink depending on the problems conditions
+    
