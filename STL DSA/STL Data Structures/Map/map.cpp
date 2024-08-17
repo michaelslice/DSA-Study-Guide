@@ -20,6 +20,10 @@
  *  
  * O(log n): Element access, insertion, find, erase(by key), begin, count, 
  * 
+ * Space Complexity
+ * 
+ * O(n): The space complexity is proportional to the amount of elements in the set
+ * 
  */
 int main() {
     std::map<char, int> map;  // Create a map with char keys and int values

@@ -12,6 +12,10 @@
  * 
  *  O(n * m): find
  * 
+ *  Space Complexity
+ * 
+ *  O(n): The space complexity is proportional to the amount of elements in the string
+ * 
  */
 #include <iostream>
 #include <string>

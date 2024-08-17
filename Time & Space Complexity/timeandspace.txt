@@ -31,3 +31,19 @@ Loops: Usually O(n), where n is the number of iterations, nested loops multiply 
 Conditional: Dont affect run time, unless they contain loops or recursive calls
 Function Calls: The complexity of different built in functions differs
 Recursion: Recurrence relations can be used to determine complexity
+
+Example:
+
+int findMax(vector<int>& arr) {
+    int maxVal = arr[0];  // O(1) space
+    for(int i = 1; i < arr.size(); i++) {  // O(N) time
+        if(arr[i] > maxVal) {  // O(1) time
+            maxVal = arr[i];  // O(1) time
+        }
+    }
+    return maxVal;
+}
+
+Time Complexity: The loop runs 'N' times so the time complexity is O(n)
+
+Space Complexity: O(1)

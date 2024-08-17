@@ -16,7 +16,6 @@ int main() {
     for(int i{0}; i < vec.size(); ++i) {
         map.insert({i, vec[i]});
     }
-
     
     for(auto num: map) {
         std::cout << "Key: " << num.first << " Value: " << num.second << '\n';

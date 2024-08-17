@@ -9,6 +9,10 @@
  *  O(n): Initialization, insert, erase, clear
  * 
  *  O(1): push_front, push_back, pop_front, pop_back, size, empty, front, back, begin, end, rbegin, rend, emplace_front, emplace_back
+ *
+ *  Space Complexity
+ * 
+ *  O(n): The space complexity is proportional to the amount of elements in the set
  * 
  */
 int main() {

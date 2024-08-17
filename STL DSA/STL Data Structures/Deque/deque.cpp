@@ -9,7 +9,11 @@
  *  O(n): Initialization, inserting, erase, clear
  * 
  *  O(1): push_front, push_back, pop_front, pop_back, size, empty, front, back, iterator operations
+ *
+ *  Space Complexity
  * 
+ *  O(n): The space complexity is proportional to the amount of elements in the set
+ *  
 */
 int main() {
     std::deque<int> deque = {1, 2, 3, 4};  // Initialize a deque with elements 1, 2, 3, 4

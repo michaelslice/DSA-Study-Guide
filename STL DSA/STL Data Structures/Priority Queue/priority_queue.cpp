@@ -11,6 +11,10 @@
  * 
  *  O(1): Top, size, empty 
  * 
+ *  Space Complexity
+ * 
+ *  O(n): The space complexity is proportional to the amount of elements in the set
+ * 
  */
 int main() {
     std::priority_queue<int> pq;  // Create a priority queue of integers

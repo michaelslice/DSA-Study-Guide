@@ -10,6 +10,10 @@ using namespace std;
  * O(n): remove
  * 
  * O(1): push_front, erase_after, insert_after
+ * 
+ * Space Complexity
+ * 
+ * O(n): The space complexity is proportional to the amount of elements in the set
  *  
  */
 int main() {

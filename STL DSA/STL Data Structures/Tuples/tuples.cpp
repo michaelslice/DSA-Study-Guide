@@ -11,6 +11,10 @@
  * 
  *  O(1): get, make_pair
  * 
+ *  Space Complexity
+ * 
+ *  O(1): The space complexity is proportional to the amount of elements in the tuple
+ * 
  */
 using namespace std;
 int main() {

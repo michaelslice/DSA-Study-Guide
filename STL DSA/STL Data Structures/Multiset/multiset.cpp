@@ -17,6 +17,10 @@
  * 
  * O(log n): Insert, find, count, equal_range, erase, lower_bound, upper_bound
  * 
+ * Space Complexity
+ * 
+ * O(n): The space complexity is proportional to the amount of elements in the set
+ * 
 */
 int main() {
     std::multiset<int> ms = {3, 1, 4, 1, 5};  // Initialize a multiset with elements 3, 1, 4, 1, 5 (note: 1 is duplicated)

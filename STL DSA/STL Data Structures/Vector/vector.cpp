@@ -6,11 +6,13 @@
  * 
  * Time Complexity of Operations
  * 
- * O(n):
+ * O(n): clear, insert, erase, resize
  * 
- * O(1):
+ * O(1): push_back, at, size, pop_back, begin, end, empty
  * 
- * Memory Complexity of Operations
+ * Space Complexity 
+ * 
+ * O(n): In general
  *  
  */
 int main() {

@@ -24,6 +24,10 @@
  * 
  *  O(1): insert, erase, find, count, size, empty, begin, end, bucket_count, load_factor, hash_function, key_eq
  *
+ *  Space Complexity
+ * 
+ *  O(n): Elements are stored in a contiguous block of elements
+ * 
 */ 
 int main() {
     // Create an unordered map with char keys and int values

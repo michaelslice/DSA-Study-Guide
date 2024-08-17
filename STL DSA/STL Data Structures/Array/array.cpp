@@ -10,6 +10,10 @@
  * 
  * O(1): Array initialization, element assignment, size retrieval, acessing elements, accessing front or back element
  * 
+ * Space Complexity
+ * 
+ * O(1): The space complexity is fixed at compile time
+ * 
  */
 int main() {
     std::array<int, 4> array = {1, 2, 3, 4};  // Initialize a static array with 4 elements: 1, 2, 3, 4

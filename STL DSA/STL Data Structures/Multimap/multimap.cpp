@@ -20,6 +20,10 @@
  *  
  * O(log n + k): Count, erase, equal_range
  * 
+ * Space Complexity
+ * 
+ * O(n): The space complexity is proportional to the amount of elements in the multi map
+ * 
  */
 int main() {
     std::multimap<char, int> mm;  // Create a multimap with char keys and int values

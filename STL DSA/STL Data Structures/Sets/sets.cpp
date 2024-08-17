@@ -17,6 +17,10 @@
  * 
  * O(log n): Insert, find, count, erase
  * 
+ * Space Complexity
+ * 
+ * O(n): The space complexity is proportional to the amount of elements in the set
+ * 
  */
 int main() {
     std::set<int> set1 = {1, 2, 3, 4};  // Initialize a set with elements 1, 2, 3, 4

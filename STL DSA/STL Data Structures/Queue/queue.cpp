@@ -8,6 +8,10 @@
  * 
  *  O(1): Push, front, pop, back, size, empty 
  * 
+ *  Space Complexity
+ * 
+ *  O(n): The space complexity is proportional to the amount of elements in the set
+ * 
  */
 int main() {
     std::queue<int> q;

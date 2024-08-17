@@ -17,7 +17,11 @@
  * O(n): clear, rehash, reserve, equal_range
  * 
  * O(1): insert, erase, find, count, size, empty, begin, end, bucket_count, load_factor, hash_function, key_eq
- *  
+ * 
+ * Space Complexity
+ * 
+ * O(n): The space complexity is proportional to the amount of elements in the set
+ * 
  */
 int main() {
     std::unordered_set<int> set1 = {1, 2, 3, 4};  // Initialize an unordered set with elements 1, 2, 3, 4
