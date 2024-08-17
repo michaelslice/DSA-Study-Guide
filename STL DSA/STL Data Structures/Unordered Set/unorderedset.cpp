@@ -39,6 +39,11 @@ int main() {
     // erase: Removes elements from the unordered set based on value.
     set1.erase(2);  // Removes 2 from the set
 
+    // == can be used to check if a element is not found
+    if(set1.find(20) == set1.end()) {
+        std::cout << "20 is not in the set" << '\n';
+    }
+
     // find: Searches for an element in the unordered set and returns an iterator to it. If not found, returns end().
     if(set1.find(20) !=set1.end()) {
         std::cout << "20 is in the set" << '\n';

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cctype>
 
 /**
  *  string: Is basically a array that just stores characters
@@ -23,6 +24,9 @@
 int main() {
     std::string str = "Hello, World!";
     
+    // alnum: Checks if a element is alphanumeric
+    std::alnum(12);
+
     // size: Returns the number of characters in the string.
     std::cout << "Size: " << str.size() << std::endl;  // Output: 13
     

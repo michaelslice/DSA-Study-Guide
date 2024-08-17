@@ -1,0 +1,9 @@
+1. Intiailize a unordered set with the elements in nums
+
+2. Iterate through the set, and check if the num is the start of a sequence if `num - 1` is not in the set
+
+3. Intialize `length = 1` and then iterate through the set and while the `num + length` is in the set increment count
+
+4. Outside of the if statement intialize count with the max of length and count
+
+5. Return count
