@@ -1,0 +1,9 @@
+1. Initialize a string to store the alpha numeric characters
+
+2. Iterate through the string s, and push_back alpanumeric characters to ans
+
+3. Create a second string to store the reversed version of the string
+
+4. Iterate through the string s in reverse and push_back alphanumeric characters to the other string
+
+5. Return `ans == rev`
