@@ -18,6 +18,11 @@
 int main() {
     std::vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};  // Initialize a vector with elements 1 through 10
 
+    std::vector<std::vector<int>> test;
+
+    // How to push_back multiple elements at once to a vector<vector<int>>, use { }
+    test.push_back({1, 2, 3});
+
     // push_back: Adds an element to the end of the vector.
     vec.push_back(6);  // Adds 6 to the end of the vector
 
