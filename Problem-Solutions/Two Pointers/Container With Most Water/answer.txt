@@ -1,0 +1,11 @@
+1. Use Two Pointers techniqe and initialize a left, and right pointer
+
+2. While left is less than right, calculate the height, which is capped at the lower height of `min(height[left], height[right])`
+
+3. Calculate the width which is just the difference of indexes `right - left`  
+
+4. Keep updating the max_area, max_area = `max(area, max_area)`
+
+5. If `height[left] < height[right], left++` we do this to attempt to find the next largest height
+
+6. Return max_area

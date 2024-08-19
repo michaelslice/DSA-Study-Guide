@@ -1,0 +1,11 @@
+1. Use the Two Pointers technique and initialize a left and right pointer
+
+2. While the left pointer is less than the right pointer, calculate the max_height seen for the left and right pointer
+
+3. Calculate the amount of rain water trapped by subtracting the current height by the max height for each side
+
+4. Add the amount of water trapped for the left and right side to a ans variable
+
+5. If the value at `nums[left] < nums[right]` increment left, else decrement right
+
+6. Return ans

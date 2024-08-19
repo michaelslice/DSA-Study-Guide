@@ -25,3 +25,22 @@ Common Problems:
 5. Sliding Window Problems
     The two pointers represent the windows start and end, and they slide across the array
     to maintain a certain condition(like a sum or a product)
+
+General Format of Two Pointers Technique
+
+while(left < right) 
+    sum = test + test
+
+    if(sum == target)
+        left++
+        right--;
+
+    else if(sum < target)
+        left++;
+    else 
+        right--;
+
+We need to check if the sum is less than the target, because we need to increment
+the left pointer to find a value that is greater to possibly equal the target
+
+If the sum is greater than the target, we need to find a value that is less than the target to try and equal the target

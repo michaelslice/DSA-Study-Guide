@@ -1,9 +1,20 @@
 1. Sort the nums array to prevent using duplicate elements
 
-2. Create a for loop iterating over the size of the vector, and check if `nums[i] == nums[i - 1]`, if there are duplicates `continue` 
+2. Create a for loop that iterates if `i > 0` and over the size of the vector, and check if `nums[i] == nums[i - 1]`, if there are duplicates `continue` 
 
-3. Use the Two Pointers technique, and initialize a left pointer starting after the fixed element, and a right pointer starting at the end of the vector
+3. Use the Two Pointers technique, and initialize a left pointer starting after the fixed element `i + 1`, and a right pointer starting at the end of the vector
 
 4. While left pointer is less than right pointer, keep calculating threeSum, `threeSum = num + nums[left] + nums[right]`
 
 5. If threeSum == 0, `ans.push_back({num, nums[left], nums[right]});
+
+6. After finding a threeSum, you need to check for duplicates for the left and right pointers
+    while(left < right && nums[left] == nums[left + 1]) left++;
+    while(left < right && nums[right] == nums[right - 1]) right--;
+
+7. After handling duplicates continue moving the left and right pointers
+
+8. Next compare if the left pointer is less than 0, if so increment `left++`
+   Else, decrement right pointer `right--` to find a value that is not greater than 0
+
+9. Return ans
