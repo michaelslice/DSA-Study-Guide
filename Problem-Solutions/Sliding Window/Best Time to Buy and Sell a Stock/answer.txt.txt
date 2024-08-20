@@ -1,0 +1,7 @@
+1.  Initialize a variable for min_buy and max_sell
+
+2. Iterate through the prices vector starting at 1
+
+3. Keep calculating the min_buy with the current element
+
+4. Keep calculating the max_buy with te 

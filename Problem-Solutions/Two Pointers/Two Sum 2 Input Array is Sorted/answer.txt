@@ -1,0 +1,9 @@
+1. Use the Two Pointers technique, and initialize a left variable and right variable, and a vector ans
+
+2. While left pointer is less than right pointer, keep calculating the sum of sum = nums[left] + nums[right]
+
+3. If sum == target push_back the left and right indexes, and increment each index
+
+4. If sum is less than target increment left, else increment right
+
+5. Out of the loop return ans
