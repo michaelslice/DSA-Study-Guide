@@ -157,8 +157,10 @@ int func(vector<int> vec){
       while(CONDITION THAT MAKES WINDOW INVALID){
           // Do some logic to "remove" element at vec[left] from window
           left++;
-
+      }
+   }
       // Do some logic to update the answer
+}
 ```
 # General DSA Cheat Sheet 
 ![image](https://github.com/user-attachments/assets/d3cd06f0-4228-4c68-8c8e-4030ede6a300) <br>
