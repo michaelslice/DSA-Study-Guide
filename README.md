@@ -162,6 +162,31 @@ int func(vector<int> vec){
       // Do some logic to update the answer
 }
 ```
+## Example Problem "Longest Substring Without Repeating Characters" Solved Using Sliding Window
+```
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+
+    int left{0};
+    int max_substr{0};
+    set<int> my_set;
+
+    for(int right{0}; right < s.size(); ++right){
+        if(my_set.find(s[right]) !=my_set.end()){
+            while(my_set.count(s[right]) > 0){
+                my_set.erase(s[left]);
+                left++;
+            }
+        }
+       
+        max_substr = max(max_substr, right - left + 1);
+        my_set.insert(s[right]);
+    }
+    return max_substr;
+    }
+};
+```
 # General DSA Cheat Sheet 
 ![image](https://github.com/user-attachments/assets/d3cd06f0-4228-4c68-8c8e-4030ede6a300) <br>
 
