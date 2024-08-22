@@ -88,6 +88,26 @@ Most algorithms will run in O(n * k) time, where k is the work done at each node
 - Add or remove element: O(n), worse case, O(log n) averase case
 - Check if element exists: O(n), worse case, O(log n) averase case
 ![image](https://github.com/user-attachments/assets/2b7a4486-2383-4dce-97df-62f4f8f5a148) <br>
+## Technique Psuedocode
+```
+int binarySearch(vector<int> vec, int target){
+    int left{0};
+    int right = vec.size() - 1;
+
+    while(left < right){
+        int mid = left + (right - left) / 2;
+
+        if(vec[mid] == target){
+            return mid; // Target found at index mid
+        } else if(vec[mid] < target){
+            left = mid + 1; // Search in right half
+        } else {
+            right = mid + 1; // Search in left half
+        }
+    }
+    return -1; // Not found
+}
+```
 # Heap/Priority Queue
 - Add an element: O(log n)
 - Delete the minimum element: O(log n)
@@ -187,6 +207,139 @@ public:
     }
 };
 ```
+# LeetCode Problem Type to STL C++ Data Structure Cheat Sheet
+
+## Array/String Problems
+- vector<T>: Dynamic array, great for most array problems
+- array<T, N>: Fixed-size array when size is known at compile time
+- string: For string manipulation problems
+
+## Hash Table Problems
+- unordered_map<K, V>: Fast key-value lookups, useful for counting or mapping
+- unordered_set<T>: Fast element lookups, good for checking existence
+
+## Ordered Data Problems
+- map<K, V>: Sorted key-value pairs, useful when order matters
+- set<T>: Sorted unique elements, good for maintaining sorted data
+
+## Stack Problems
+- stack<T>: LIFO data structure, useful for parsing, backtracking
+
+## Queue Problems
+- queue<T>: FIFO data structure, useful for BFS
+- deque<T>: Double-ended queue, useful when need to add/remove from both ends
+
+## Priority Queue Problems
+- priority_queue<T>: Heap data structure, useful for top K elements, scheduling
+
+## Linked List Problems
+- Use custom ListNode structure or std::list<T> if modification heavy
+
+## Tree Problems
+- Use custom TreeNode structure
+- For special trees: map<K, V> (for BST-like behavior)
+
+## Graph Problems
+- vector<vector<int>>: Adjacency list representation
+- unordered_map<int, vector<int>>: Adjacency list with non-contiguous vertices
+
+## Interval Problems
+- vector<pair<int, int>>: For storing intervals
+
+## Bit Manipulation Problems
+- bitset<N>: Fixed-size sequence of N bits
+
+## String Matching Problems
+- string: Base data structure
+- unordered_map<char, int>: For character frequency
+
+## Dynamic Programming Problems
+- vector<int> or vector<vector<int>>: For memoization or tabulation
+
+## Sliding Window Problems
+- Typically use basic types (int, char) with two-pointer technique
+- unordered_map<char, int>: Often used for character frequency in the window
+
+## Matrix Problems
+- vector<vector<int>>: 2D dynamic array
+
+## Trie Problems
+- Custom TrieNode structure or nested unordered_map<char, TrieNode*>
+# LeetCode Problem Type to Algorithm/Technique Cheat Sheet (C++)
+
+## Array/String Problems
+- Two Pointers: Efficient for in-place operations or finding pairs
+- Sliding Window: For subarrays/substrings with specific properties
+- Prefix Sum: For range sum queries or cumulative operations
+
+## Searching Problems
+- Binary Search: For sorted arrays or search space reduction
+- Linear Search: For unsorted data or when binary search isn't applicable
+
+## Sorting Problems
+- std::sort(): General-purpose sorting
+- Counting Sort: For small range of integers
+- Bucket Sort: For uniformly distributed data
+- Quicksort: When average-case O(n log n) is acceptable
+- Mergesort: When stable sort is needed
+
+## Dynamic Programming
+- Top-down (Memoization): Recursive problems with overlapping subproblems
+- Bottom-up (Tabulation): Iterative approach for DP problems
+- Common patterns: 0/1 Knapsack, Longest Common Subsequence, etc.
+
+## Graph Traversal
+- Depth-First Search (DFS): Exploring paths, cycle detection, topological sort
+- Breadth-First Search (BFS): Shortest path in unweighted graphs, level-order traversal
+
+## Graph Algorithms
+- Dijkstra's Algorithm: Shortest path in weighted graphs
+- Bellman-Ford: Shortest path with negative edges
+- Floyd-Warshall: All-pairs shortest path
+- Kruskal's/Prim's: Minimum Spanning Tree
+- Topological Sort: For Directed Acyclic Graphs (DAGs)
+
+## Tree Traversal
+- Inorder, Preorder, Postorder: For various tree problems
+- Level-order (BFS): For level-wise operations
+
+## Backtracking
+- For generating all possible combinations/permutations
+- Solving puzzles (e.g., N-Queens, Sudoku)
+
+## Greedy Algorithms
+- For optimization problems where local optimal choice leads to global optimal
+
+## Divide and Conquer
+- For problems that can be broken down into similar subproblems
+
+## Bit Manipulation
+- For problems involving binary operations or optimization
+
+## String Matching
+- KMP (Knuth-Morris-Pratt): Efficient pattern matching
+- Rabin-Karp: Rolling hash for pattern matching
+
+## Mathematical Algorithms
+- Sieve of Eratosthenes: Prime number generation
+- Euclidean Algorithm: GCD calculation
+- Fast Exponentiation: Quick power calculation
+
+## Union-Find (Disjoint Set)
+- For problems involving connected components or equivalence relations
+
+## Sliding Window
+- For substring/subarray problems with specific constraints
+
+## Monotonic Stack/Queue
+- For next greater/smaller element problems
+- For maintaining order in a specific window
+
+## Trie
+- For prefix-based string problems or autocomplete features
+
+## Heap
+- For k-th element problems or partial sorting
 # General DSA Cheat Sheet 
 ![image](https://github.com/user-attachments/assets/d3cd06f0-4228-4c68-8c8e-4030ede6a300) <br>
 
