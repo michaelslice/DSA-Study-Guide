@@ -60,7 +60,7 @@
 - Check if value exists: (n)
 - Access or modify value associated with key: O(1)
 - Iterate over all keys, values, or both: O(n)
-![image](https://github.com/user-attachments/assets/c28a41ff-f0d0-4fe7-a214-8b3fecfccf4b) <br>
+![image](https://github.com/user-attachments/assets/91642b24-deef-4a68-9987-a73ce25a47da) <br>
 # Set
 - Add or remove element: O(1)
 - Check if element exists: O(1) <br>
@@ -92,14 +92,74 @@ Most algorithms will run in O(n * k) time, where k is the work done at each node
 - Add an element: O(log n)
 - Delete the minimum element: O(log n)
 - Find the minimum element: O(1)
-- Check if element exists: O(n)
+- Check if element exists: O(n) <br>
 ![image](https://github.com/user-attachments/assets/92dbc7ef-0e3a-4f10-aba3-aff375afbb0f) <br>
 # Binary Search
 Binary search runs in O(log n) in the worse case, where n is the size of your initial search space. <br>
-![image](https://github.com/user-attachments/assets/fcd8178a-075b-4e76-afc1-1d26aaf7518d) <br>
+![image](https://github.com/user-attachments/assets/6a73ab69-db9e-4729-8888-dcad209bbe2a) <br>
 # Sorting Algorithms
 Is is usually correct to assume and say sorting costs O(n * log n), where n is the number of elements being sorted. <br>
 ![image](https://github.com/user-attachments/assets/200cac32-ef1d-4871-b0cb-9741177ed6f9) <br>
+# Two Pointers
+- Two pointers is an extremely common technique used to solve array and string problems. It involves having two integer variables that both move along an iterable. We will have two variables named `left` and `right` which each represent an index of the array or string.
+## Converting This Idea Into Instructions
+1. Start one pointer at the first index `0` and the other pointer at the last index `vec.size() - 1`
+2. Use a while loop until the pointers are equal to each other
+3. At each iteration of the loop, move the pointers towards each other. This means either increment the pointer that started at the first index, decrement the pointer that started at the last index, or both. Deciding which pointers to move will depend on the problem that you are trying to solve.
+## Technique Psuedocode
+```
+int func(vector<int> vec){
+  left = 0;
+  right = vec.size() - 1;
+
+while (left < right){
+  // Do some logic here
+  // Do some more logic here to decide on one of the following
+    1. left++;
+    2. right--;
+    3. Both left++ and right--  
+```
+This strength in this technique is that we will never have more than O(n) iterations for the while loop, because the pointers start at `n` away from each other and move at least one step closer in every iteration. Therefore, if we can keep the work inside each iteration at O(1), this technique will result in linear runtime.
+## General Notes on Two Pointers
+- Some problems can have the pointers starting at the first and last index, but some problems can be solved by starting the pointers at different indices.
+- Two Pointers just refers to using two integer variables to move along some iterables.
+# Sliding Window
+- Sliding window is another common approach to solving problems related to strings and arrays. The sliding window is implemented using two pointers. To understand the sliding window, the `subarray` must be understood
+## Subarrays
+- Given an array, a `subarray` is a contiguous section of the array for example the subarray of `[1, 2, 3, 4]` are
+  - `[1]`, `[2]`, `[3]`, `[4]`
+  - `[1, 2]`, `[2, 3]`, `[3, 4]`
+  - `[1, 2, 3]`, `[2, 3, 4]`
+  - `[1, 2, 3, 4]`
+- A subarray can be defined by two indices, the start and end. For example, with `[1, 2, 3, 4]`, the subarray `[2, 3]` has a starting index of `1` and an ending index of `2`. The starting index can be called the `left bound` and the ending index the `right bound`.
+![image](https://github.com/user-attachments/assets/bdbd73f9-9483-4bec-ad57-1e2fa754ecd6) <br>
+## When to Use Sliding Window?
+There is a very common group of problems involving subarrays that can be solved efficiently with sliding window.
+1. First the problem will either explicitly or implicitly define criteria that makes a subarray "valid"
+   - A constraint metric: Generally some attribute of a subarray like, sum, unique elements, frequency
+   - A numeric restriction on the constraint metric
+2. The problem will ask you to find valid subarrays in some way
+   - Most commonly the task is to find the "best" valid subarray, under some specific criteria
+   - Another common task is finding the number of valid subarrays
+## The Sliding Window Algorithm
+1. The idea behind a slide window is to consider **only** valid subarrays. Recall that a subarray can be defined by a left bound (the index of the first element) and a right bound(the index of the last element). In sliding window, we maintain two variables `left` and `right`, which at any given time represent the **current subarray** under consideration.
+2. Initially, we have `left = right = 0`, which means that the first subarray we look at is just the first element of the array on its own. We want to expand the size of our "window", and we do that by incrementing `right`. When we increment `right`, this is like "adding" a new element to our window
+3. But what if after adding a new element, the subarray becomes invalid? We need to "remove" some elements from our window until it becomes valid again. To "remove" elements, we can increment `left`, which shrinks our window.
+4. As we add and remove elements, we are "sliding" our window along the input from left to right. The window's size is constantly changing - it grows as large as it can until it's invalid, and then it shrinks. However, it always slides along to the right, until we reach the end of the input. <br>
+![image](https://github.com/user-attachments/assets/71c37dfb-83c2-4ada-bb77-1ad2ea3d76f3) <br>
+## Technique Psuedocode
+```
+int func(vector<int> vec){
+  left = 0;
+  for(int right = 0; right < vec.size(); right++){
+      // Do some logic to "add" element at vec[right] to window
+
+      while(CONDITION THAT MAKES WINDOW INVALID){
+          // Do some logic to "remove" element at vec[left] from window
+          left++;
+
+      // Do some logic to update the answer
+```
 # General DSA Cheat Sheet 
 ![image](https://github.com/user-attachments/assets/d3cd06f0-4228-4c68-8c8e-4030ede6a300) <br>
 
