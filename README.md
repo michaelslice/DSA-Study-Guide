@@ -207,6 +207,64 @@ public:
     }
 };
 ```
+# LeetCode Problem Type to STL C++ Data Structure Cheat Sheet
+
+## Array/String Problems
+- vector<T>: Dynamic array, great for most array problems
+- array<T, N>: Fixed-size array when size is known at compile time
+- string: For string manipulation problems
+
+## Hash Table Problems
+- unordered_map<K, V>: Fast key-value lookups, useful for counting or mapping
+- unordered_set<T>: Fast element lookups, good for checking existence
+
+## Ordered Data Problems
+- map<K, V>: Sorted key-value pairs, useful when order matters
+- set<T>: Sorted unique elements, good for maintaining sorted data
+
+## Stack Problems
+- stack<T>: LIFO data structure, useful for parsing, backtracking
+
+## Queue Problems
+- queue<T>: FIFO data structure, useful for BFS
+- deque<T>: Double-ended queue, useful when need to add/remove from both ends
+
+## Priority Queue Problems
+- priority_queue<T>: Heap data structure, useful for top K elements, scheduling
+
+## Linked List Problems
+- Use custom ListNode structure or std::list<T> if modification heavy
+
+## Tree Problems
+- Use custom TreeNode structure
+- For special trees: map<K, V> (for BST-like behavior)
+
+## Graph Problems
+- vector<vector<int>>: Adjacency list representation
+- unordered_map<int, vector<int>>: Adjacency list with non-contiguous vertices
+
+## Interval Problems
+- vector<pair<int, int>>: For storing intervals
+
+## Bit Manipulation Problems
+- bitset<N>: Fixed-size sequence of N bits
+
+## String Matching Problems
+- string: Base data structure
+- unordered_map<char, int>: For character frequency
+
+## Dynamic Programming Problems
+- vector<int> or vector<vector<int>>: For memoization or tabulation
+
+## Sliding Window Problems
+- Typically use basic types (int, char) with two-pointer technique
+- unordered_map<char, int>: Often used for character frequency in the window
+
+## Matrix Problems
+- vector<vector<int>>: 2D dynamic array
+
+## Trie Problems
+- Custom TrieNode structure or nested unordered_map<char, TrieNode*>
 # General DSA Cheat Sheet 
 ![image](https://github.com/user-attachments/assets/d3cd06f0-4228-4c68-8c8e-4030ede6a300) <br>
 
