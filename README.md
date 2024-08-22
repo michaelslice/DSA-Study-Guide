@@ -88,6 +88,26 @@ Most algorithms will run in O(n * k) time, where k is the work done at each node
 - Add or remove element: O(n), worse case, O(log n) averase case
 - Check if element exists: O(n), worse case, O(log n) averase case
 ![image](https://github.com/user-attachments/assets/2b7a4486-2383-4dce-97df-62f4f8f5a148) <br>
+## Technique Psuedocode
+```
+int binarySearch(vector<int> vec, int target){
+    int left{0};
+    int right = vec.size() - 1;
+
+    while(left < right){
+        int mid = left + (right - left) / 2;
+
+        if(vec[mid] == target){
+            return mid; // Target found at index mid
+        } else if(vec[mid] < target){
+            left = mid + 1; // Search in right half
+        } else {
+            right = mid + 1; // Search in left half
+        }
+    }
+    return -1; // Not found
+}
+```
 # Heap/Priority Queue
 - Add an element: O(log n)
 - Delete the minimum element: O(log n)
