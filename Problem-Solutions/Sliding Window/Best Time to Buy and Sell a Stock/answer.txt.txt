@@ -4,4 +4,6 @@
 
 3. Keep calculating the min_buy with the current element
 
-4. Keep calculating the max_buy with te 
+4. Keep calculating the max_buy based off of the current max_buy and the new profit calculation
+
+5. Return max_bu

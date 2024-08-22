@@ -1,0 +1,10 @@
+1. Use the Sliding Window technique, to find the valid subarray, also use a set to maintain a unique amount of elements
+
+2. Iterate through `s` using the right pointer
+
+3. If duplicate is found s[right], enter a while loop and keep removing s[left] from the set until the duplicate is removed
+   and keep incrementing left pointer
+
+4. Outside keep calculating the max substring without duplicates, and add s[right] to the set
+
+5. Return max_substring
