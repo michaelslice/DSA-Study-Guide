@@ -31,7 +31,7 @@ std::list: Doubly linked list that allows bidirectional iteration
 
 std::forward_list: Singly linked list that allows unidirectional iteration
 
-std::stack: ast-In-First-Out (LIFO) stack
+std::stack: Last-In-First-Out (LIFO) stack
 
 std::queue: First-In-First-Out (FIFO) queue
 
