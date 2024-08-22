@@ -1,0 +1,15 @@
+1. Use the Sliding Window technique, and use two maps to track the count of each element in s1 and the window
+
+2. Create a for loop and iterate over s1, inserting elements in s1_map, and incrementing the count of each element
+
+3. Use a right pointer and iterate over s2
+
+4. Insert elements into the window_map
+
+5. If the size of the window `right - left + 1` is greater than s1 size, decrease the size of the window, 
+   and decrement the count of the `s2[left]--`, if the count of s2[left] is 0, remove it from the map, and 
+   increment the left pointer
+
+6. Check if s1_map is equal to window_map, if so return true, meaning there is a permutation
+
+6. Return false

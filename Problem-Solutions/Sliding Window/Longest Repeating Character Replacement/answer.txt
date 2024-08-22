@@ -1,0 +1,14 @@
+1. Use the Sliding Window technique and a hashmap to track the count of the current elements
+
+2. Iterate through s[i] with the right pointer
+
+3. Keep inserting values into the hashmap, along with incrementing their count
+
+4. Calculate the most common element in the map
+
+5. Calculate the current window length `right - left + 1`
+
+6. If the least frequent element exceeds k, decrement the count of that element by the left pointer in the map,
+   and shrink the window, by incrementing left
+
+7. Update the current max_substring, and return it
