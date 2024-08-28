@@ -1,0 +1,8 @@
+Intution/Goal: We neet to implement functions that that will work on a stack
+
+1. Create a stack data structure, and for the data type make it Node, in minStack implement a Node structure
+   that will have a min, and val value with it
+
+2. When pushing elements onto the stack keep calculating the min with the val and the current min
+
+3. All other functions just use the built in STL function on the stack

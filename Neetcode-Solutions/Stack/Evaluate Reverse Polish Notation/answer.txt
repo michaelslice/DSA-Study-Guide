@@ -1,0 +1,10 @@
+Goal: We need to iterate throught the vector of strings and calculate the reverse polish notation
+
+1. Iterate throught the vector if the current element is not a operand push it on to the stack
+
+2. Get the left and right elements from the stack and pop them
+
+3. If the current element in the stack is equal to the operand, perform that operation with the left and
+   right elements and push onto stack
+
+4. Return the top of the stack

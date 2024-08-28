@@ -1,0 +1,11 @@
+Intutution/Goal: We need to see if a string has a valid number of parentheses, we can solve this by pushing
+opening brackets onto the stack, and seeing if a string element is equal to a closing bracket
+
+1. Iterate through the string
+
+2. If you find a opening bracket push it onto the stack, if not return false
+
+3. Check if the current element is equal to a closing bracket and if see if there is a match
+   if so pop the stack a valid match was found
+
+4. If not match was found return false it was not valid
