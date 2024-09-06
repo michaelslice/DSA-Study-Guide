@@ -1,0 +1,8 @@
+Once I finished a pattern, I would piece together the information into an abstract strategy, the situations in which that strategy can be used, what makes the strategy more/less efficient compared to other options, common characteristics in problems where I should consider this strategy, along with its edge cases and time/space complexity, and write down my page of notes. 
+
+Don’t look at the solution until you’re stuck for 30 minutes, meaning you haven’t made any progress in your logic for 30 minutes, making logical reasoning steps in your head doesn’t count as being stuck. To actually solve a problem, read the prompt, visuals, examples, and input ranges.
+
+Use your logical deductions and match onto a few potential strategies that you think have a high chance of working and investigate how each of those strategies could be used to solve the problem. Sometimes you'll need to combine strategies in series or parallel. If you can’t identify any, just try each of the 24 strategies one by one in your head, even if this fails it’s all good practice for your logical reasoning skills.
+
+Once you have the optimal solution in your head, write down your algorithm in comments above the function in 2-4 lines along with the time and space complexity. Writing the algorithm down takes me a minute, but it saves me 5-10 minutes during my implementation as it lets me focus purely on implementing my algorithm into code by referring to the text when I get confused without having to think “what was my algorithm doing at this step again?”.
+

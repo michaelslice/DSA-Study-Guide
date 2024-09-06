@@ -1,0 +1,114 @@
+Here's a cheat sheet to help you quickly identify which C++ data structure to use based on common LeetCode problem patterns. This cheat sheet categorizes the structures into sorted and unsorted types, highlighting their key features and typical use cases.
+
+Sorted Data Structures
+std::multiset
+
+Stores: Duplicate keys
+Use When:
+You need to keep elements sorted.
+You require counting multiple instances of elements.
+Common in problems like "Find the k-th largest element" or "Count distinct elements."
+std::multimap
+
+Stores: Duplicate keys, with associated values.
+Use When:
+You need to store sorted key-value pairs with duplicate keys.
+Useful in problems like "Group elements by frequency" or "Store multiple values for the same key."
+std::set
+
+Stores: Unique keys
+Use When:
+You need to maintain a collection of unique elements in sorted order.
+Common in problems like "Find the next greater element" or "Remove duplicates while preserving order."
+std::map
+
+Stores: Unique keys with associated values.
+Use When:
+You need to map unique keys to values, with keys sorted.
+Used in problems like "Count frequency of elements" or "Implement LRU Cache."
+std::priority_queue
+
+Stores: Elements in a way that the largest (or smallest) element can be removed first.
+Use When:
+You need to repeatedly access the largest (or smallest) element.
+Common in problems like "Find the k-th smallest/largest element" or "Merge k sorted arrays."
+Unsorted Data Structures
+std::unordered_set
+
+Stores: Unique keys, no order.
+Use When:
+Fast lookup, insertion, and deletion of unique elements without caring about order.
+Ideal for problems like "Check if an element exists" or "Count distinct elements."
+std::unordered_map
+
+Stores: Unique keys with associated values, no order.
+Use When:
+Fast access to key-value pairs without needing sorted order.
+Common in problems like "Count frequency of elements" or "Group elements by key."
+std::unordered_multiset
+
+Stores: Duplicate keys, no order.
+Use When:
+You need fast lookup and the ability to store duplicate elements.
+Useful in problems like "Count occurrences of elements" or "Multiset operations."
+std::unordered_multimap
+
+Stores: Duplicate keys with associated values, no order.
+Use When:
+You need to associate multiple values with the same key without requiring order.
+Common in problems like "Group elements by multiple keys."
+std::vector
+
+Stores: Dynamic array.
+Use When:
+You need a resizable array with fast random access.
+Ideal for problems like "Two Sum" or "Dynamic programming."
+std::deque
+
+Stores: Double-ended queue.
+Use When:
+You need to insert/remove elements from both ends efficiently.
+Common in problems like "Sliding Window Maximum" or "Implement Deque."
+std::list
+
+Stores: Doubly linked list.
+Use When:
+You need efficient insertion and deletion from both ends and middle.
+Ideal for problems like "LRU Cache" or "Reverse a linked list."
+std::forward_list
+
+Stores: Singly linked list.
+Use When:
+You need efficient insertion and deletion but only require unidirectional iteration.
+Useful in problems like "Reverse a singly linked list."
+std::stack
+
+Stores: Last-In-First-Out (LIFO).
+Use When:
+You need to access the most recent element first.
+Ideal for problems like "Balanced Parentheses" or "Evaluate Reverse Polish Notation."
+std::queue
+
+Stores: First-In-First-Out (FIFO).
+Use When:
+You need to access elements in the order they were added.
+Common in problems like "Level Order Traversal" or "Breadth-First Search."
+std::pair
+
+Stores: Two elements.
+Use When:
+You need to group two related elements together.
+Common in problems like "Store coordinates" or "Return two values."
+std::tuple
+
+Stores: Any number of elements.
+Use When:
+You need to group multiple related elements together.
+Useful in problems like "Return multiple values" or "Group related data."
+How to Use This Cheat Sheet
+For Sorting Problems: Prefer std::set, std::map, std::multiset, or std::multimap if you need the elements sorted.
+For Fast Lookup/Insertion/Deletion: Use std::unordered_set, std::unordered_map, std::unordered_multiset, or std::unordered_multimap.
+For Stack/Queue Operations: Use std::stack for LIFO and std::queue for FIFO.
+For Dynamic Arrays: Use std::vector or std::deque depending on whether you need operations from both ends.
+For Linked List Operations: Use std::list or std::forward_list based on the required direction of traversal.
+This cheat sheet should guide you through most LeetCode problems by identifying the most suitable C++ STL data structure based on the problem pattern.

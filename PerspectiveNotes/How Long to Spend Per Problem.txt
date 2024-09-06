@@ -1,0 +1,10 @@
+How Long to Spend Per Problem
+
+Easy: 30min
+Medium: 45min
+Hard: 1 Hour
+
+If close to solution throw in extra 10min
+
+After Watch NeetCode Video Explanation
+
