@@ -1,0 +1,11 @@
+Intution/Goal: We need to generate all combinations of valid parentheses for a given number n,
+the solution is a recursive backtracking approach
+
+1. Create a helper function to recursively backtrack to find all valid solutions
+the function should have parameters for n pairs, 0 open, o close, an empty string, result vector to store answers
+
+2. In the helper function, the base case compares if open and close are == to n if so push back the str and return
+
+3. Secondly you need to compare if open is less than n if so call the generate function with a open parenthese, and open + 1
+
+4. Lastly you need to compare if open is greater than close if so call the generate function with a close parenthese and close + 1 
