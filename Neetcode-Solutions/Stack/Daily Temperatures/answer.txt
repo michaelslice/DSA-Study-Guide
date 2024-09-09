@@ -1,0 +1,12 @@
+Goal/Intution: We need to calculate the amount of days for a higher temperature
+
+1. Use a stack to store current index of first element
+
+2. Iterate through the temperatures vector
+
+3. While the stack is not empty, and the current temperature is greater than 
+the element at current stack index, calculate the number of days and pop the stack
+
+4. Outside of the loop push the new index onto the stack
+
+5. Return the vector ans
