@@ -1,0 +1,11 @@
+Goal: Search the vector to find the target elements index in O(log n)
+
+1. Use two pointers and iterate through nums while left is less than or equal to right
+
+2. Keep calculating the mid index which is left(left - right) / 2
+
+3. If nums[mid] equal target return mid
+
+4. If mid is less than target, recalculate left mid + 1
+
+5. Else right = mid - 1
