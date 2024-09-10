@@ -1,0 +1,12 @@
+Goal: We need to find the number of fleets, the problem involves cars 
+traveling on a single lane road, a fleet is a group of cars that travel 
+together. Meaning a faster car that catches up to a slower car will form
+a fleet, and they will reach their destination together.
+
+1. First sort the cars position in descending order
+
+2. For each car calculate how long it will take to reach the target
+
+3. Track the time of the last fleet
+
+4. If the current cars time is greater than the previous fleets time than it forms a new fleet
