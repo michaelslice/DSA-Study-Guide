@@ -1,0 +1,18 @@
+Goal: We need to find the minimum eating speed for 
+      Koko to eat all the bananas in h hours
+    
+1. Calculate the largest pile of bananas
+
+2. Initialize a left and right pointer, each starting at opposite sides of the vector
+
+3. While left pointer less than or equal to right pointer, keep calculating the mid pointer
+
+4. For the current index calculate the hours it would koko to eat all the bananas, this can
+be done using the ceil functin `ceil((double) piles[i] / k)
+
+5. If the hours taking to eat is less than or equal to h, then it is valid, update the answer
+with `result = min(result, k)`, also reduce the upper bound search
+
+6. If the hours taking to eat is not valid, increase the lower bound search
+
+7. Return the result

@@ -1,0 +1,7 @@
+Goal: Search a 2D Matrix for a specfic element
+
+1. Flatten the 2D Matrix into a new 1D Matrix
+
+2. Perform binary search on the sorted 1D Matrix
+
+3. If the element is found return true, else return false
