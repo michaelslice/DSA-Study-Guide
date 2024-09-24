@@ -1,0 +1,12 @@
+Goal: Create a time based key value data structure
+
+1. Create a unordered map with the key being a string, and the value being a vector of pairs
+of int and string
+
+2. For the set method for the current key push_back the timestamp and the value
+
+3. For the get method check if the key is equal to the end if so return ""
+
+4. Otherwise do binary search on our unordered map, by checking for m[key][mid]
+
+5. If high is greater than or equal to 0 return m[key][high].second
