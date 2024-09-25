@@ -1,0 +1,4 @@
+Goal: Given a linked list rotate between the beginning and end nodes to change 
+the linked list
+
+Technique/Trick: Use slow and fast pointers

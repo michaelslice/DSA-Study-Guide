@@ -1,0 +1,17 @@
+Goal: Iterate through two lists and append append them to a new list in sorted order
+
+1. Check if both lists are empty, if list1 is empty, and if list2 is empty
+
+2. Create a dummy list node, to track and store the new sorted list
+
+3. Iterate through both lists as long as they are both not equal to NULL
+
+4. Check if the value in list1 is less than or equal to the value in list2
+   if so append the node to the next pointer in the list
+
+5. Keep moving the current node to the next node in the list
+
+6. Finally check if there are remaining nodes in either list, if so append the opposite 
+   nodes from the empty list
+
+7. Return the dummy next pointer, because the original dummy node was a placeholder

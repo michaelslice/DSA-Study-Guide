@@ -1,0 +1,13 @@
+Goal: Check if there is a cycle in a list
+
+1. Check if the head node is NULL, if so return false, there cannot be a cycle
+
+2. Use the slow and fast pointer technique, and initialize a slow and fast pointer
+
+3. Check if the current next pointer, and the next next pointer is not NULL, we do this to ensure we can safely move
+
+4. Upadte the slow pointer to move 1 step at a time, and the fast pointer to move 2 steps at a time
+
+5. Check if slow and fast are equal, if so there is a cycle so return true
+
+6. If we make it to here return false, no cycle
