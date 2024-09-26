@@ -52,6 +52,31 @@ public:
         temp->next = new_node;
     }
 
+    void deleteNode(int value){
+        // If the list is empty
+        if(head == nullptr){
+            return;
+        }
+
+        // If the node to be deleted is the head
+        if(head->data == value){
+            Node* temp = head;
+            head = head->next; // Move head to the next node
+            delete temp;
+            return;
+        }
+
+        // Traverse the list to find the node to delete
+        while(temp->next != nullptr && temp->next->data != value){
+            temp = temp->next;
+        }
+
+        // Bypass node to delete it
+        Node* nodeToDelete = temp->next;
+        temp->next = temp->next->next;
+        delete nodeToDelete;
+    }
+
     void display(){
         Node* temp = head;
         while(temp != nullptr){

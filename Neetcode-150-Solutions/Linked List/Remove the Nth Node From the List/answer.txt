@@ -1,0 +1,16 @@
+Goal: Remove the nth node from the list
+
+Time Complexity:
+Space Complexity:
+
+1. Use the two pointers technique, check if the head node is NULL, if so return NULL
+
+2. Create a slow and fast pointer, and move the fast pointer n steps ahead
+
+3. Check for if n is the size of the list, if fast becomes NULL then return the next pointer
+
+4. Move slow and fast across the list, until fast has reached the end of the list
+
+5. Remove the nth node by updating slow to skip the nth element
+
+6. Return the modified list
