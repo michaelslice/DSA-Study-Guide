@@ -1,0 +1,15 @@
+Goal: Construct a deep copy of the nodes of the list, and store the mapping from original
+nodes to new nodes in an unordered map
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+1. Create a map with the key being being a pointer to the original node, and the value being a pointer to the copied node
+
+2. Create a temp pointer to the head of the list
+
+3. Create a deep copy of all nodes, and update the head of the list
+
+4. Reset the head pointer
+
+5. 

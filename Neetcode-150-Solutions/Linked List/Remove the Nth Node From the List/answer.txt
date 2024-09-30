@@ -1,7 +1,7 @@
 Goal: Remove the nth node from the list
 
-Time Complexity:
-Space Complexity:
+Time Complexity: O(n^2)
+Space Complexity: O(1)
 
 1. Use the two pointers technique, check if the head node is NULL, if so return NULL
 

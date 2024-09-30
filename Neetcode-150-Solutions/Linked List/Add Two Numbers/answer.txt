@@ -1,0 +1,23 @@
+Goal: Digits are stored in reverse order in a linked list, add the two numbers
+and return the result as a linked list
+
+Time Complexity: O(max(m, n))
+Space Complexity: O(max(m, n))
+
+1. Create a dummy list, and a pointer to track the current node, and carry num
+
+2. Iterate until either list is not empty
+
+3. Calculate the nums value by checking if the list is null and either assign the value or 0
+
+4. Add together the values of both lists and the carry
+
+5. Calculate carry by dividing the sum by 0
+
+6. Append the value of the sum modulo 10 to the next poiner of current
+
+7. Check if l1 or l2 is null, and move to the next element
+
+8. Check if the carry is equal to 1 if so append 1 to the curr pointer
+
+9. Return dummy->next
