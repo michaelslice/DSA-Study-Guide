@@ -35,7 +35,7 @@
 - Check if element exists: O(n)
 - Two Pointers: O(n * k), where k is the work done at each iteration, includes sliding window
 - Building a prefix sum: O(n)
-- Finding the sum of a subarray given a prefix sum: O(1)
+- Finding the sum of a subarray given a prefix sum: O(1) <br>
 ![image](https://github.com/user-attachments/assets/d8d7bd6d-471d-4919-adee-0c2c18a44356) <br>
 # String
 - Add or remove character: O(n)
@@ -120,8 +120,7 @@ Binary search runs in O(log n) in the worse case, where n is the size of your in
 # Sorting Algorithms
 Is is usually correct to assume and say sorting costs O(n * log n), where n is the number of elements being sorted. <br>
 ![image](https://github.com/user-attachments/assets/200cac32-ef1d-4871-b0cb-9741177ed6f9) <br>
-# LeetCode Problem Type to STL C++ Data Structure Cheat Sheet
-
+# Problem Type to STL C++ Data Structure Cheat Sheet
 ## Array/String Problems
 - vector<T>: Dynamic array, great for most array problems
 - array<T, N>: Fixed-size array when size is known at compile time
@@ -178,7 +177,7 @@ Is is usually correct to assume and say sorting costs O(n * log n), where n is t
 
 ## Trie Problems
 - Custom TrieNode structure or nested unordered_map<char, TrieNode*>
-# LeetCode Problem Type to Algorithm/Technique Cheat Sheet (C++)
+# Problem Type to Algorithm/Technique Cheat Sheet (C++)
 
 ## Array/String Problems
 - Two Pointers: Efficient for in-place operations or finding pairs
